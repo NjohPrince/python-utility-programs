@@ -47,7 +47,7 @@ print(username[-1])  # negative indexing from right to left
 
 # username[0] = 'D'
 
-# creates a list seprated by the given character['The', 'unicornDev']
+# creates a list seprated by the given character['The', 'nicornDev']
 print(username.split('U'))
 
 print(username.count('r'))  # count occurence of given character
