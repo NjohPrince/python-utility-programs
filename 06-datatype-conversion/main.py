@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 
-"""main.py: converting from one datatype to another in python"""
+"""main.py: converting from one datatype to another in python -type casting"""
 
 __author__ = "Njoh Noh Prince Junior"
 __copyright__ = "Copyright 2022"
@@ -11,9 +11,6 @@ __maintainer__ = "Njoh Noh Prince Junior"
 __email__ = "jufredprince@gmail.com"
 
 # program starts here - igonore what is above
-
-from ast import Num
-
 
 data = "123"
 
