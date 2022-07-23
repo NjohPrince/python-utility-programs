@@ -31,7 +31,7 @@ class Person:
         return 'My secret code is {}'.format(self.__secret_code)
 
 
-p1 = Person('Njoh Noh Prince Junior', 25, 123)
+p1 = Person('Njoh Noh Prince Junior', 25, 123)  # object -instance of a class
 p1.sayHi()
 
 # accessing the name attribute
