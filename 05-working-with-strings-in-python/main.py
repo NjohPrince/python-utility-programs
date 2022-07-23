@@ -45,6 +45,15 @@ print(username.split('U'))
 
 print(username.count('r'))  # count occurence of given character
 
+# slicing strings
+
+print(username[:]) # TheUnicornDev
+print(username[1:]) # theUnicornDev -from position 1 to the right
+print(username[:1]) # T -from position 1 to the left
+print(username[::1]) # TheUnicornDev -prints but does not reverse the order of characters
+print(username[::-1]) # reverses the string
+print(username[0:10:2]) # [ start : end : step ]
+
 # Example string methods in python
 
 #  capitalize() - Converts the first character to upper case
