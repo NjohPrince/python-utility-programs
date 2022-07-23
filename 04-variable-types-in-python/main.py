@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 
-"""main.py: comments in python"""
+"""main.py: variable types in python"""
 
 __author__ = "Njoh Noh Prince Junior"
 __copyright__ = "Copyright 2022"
