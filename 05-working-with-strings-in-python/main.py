@@ -31,13 +31,14 @@ print(username.capitalize())  # Theunicorndev
 # i -> 5
 # c -> 6
 # o -> 7
-# r -> 8
-# n -> 9
-# D -> 10
-# e -> 11
-# v -> 12
+# r -> 8 -> -5
+# n -> 9 -> -4
+# D -> 10 -> -3
+# e -> 11 -> -2
+# v -> 12 -> -1
 
 print(username[4])  # n -character at 4th index, 5th position
+print(username[-1])  # negative indexing from right to left
 
 # creates a list seprated by the given character['The', 'unicornDev']
 print(username.split('U'))
