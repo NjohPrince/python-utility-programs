@@ -40,6 +40,13 @@ print(username.capitalize())  # Theunicorndev
 print(username[4])  # n -character at 4th index, 5th position
 print(username[-1])  # negative indexing from right to left
 
+# NOTE: PYTHON STRINGS ARE IMMUTABLE
+# HENCE CAN NOT CHANGE THE ELEMENT WITHIN A GIVEN POSITION
+# WITHIN A STRING
+# the line below will throw an error
+
+# username[0] = 'D'
+
 # creates a list seprated by the given character['The', 'unicornDev']
 print(username.split('U'))
 
@@ -47,12 +54,13 @@ print(username.count('r'))  # count occurence of given character
 
 # slicing strings
 
-print(username[:]) # TheUnicornDev
-print(username[1:]) # theUnicornDev -from position 1 to the right
-print(username[:1]) # T -from position 1 to the left
-print(username[::1]) # TheUnicornDev -prints but does not reverse the order of characters
-print(username[::-1]) # reverses the string
-print(username[0:10:2]) # [ start : end : step ]
+print(username[:])  # TheUnicornDev
+print(username[1:])  # theUnicornDev -from position 1 to the right
+print(username[:1])  # T -from position 1 to the left
+# TheUnicornDev -prints but does not reverse the order of characters
+print(username[::1])
+print(username[::-1])  # reverses the string
+print(username[0:10:2])  # [ start : end : step ]
 
 # Example string methods in python
 
