@@ -56,6 +56,7 @@ not(x > 20)  # not logical operator
 
 # Some identity operators
 
+# a sequence of numbers is needed
 y = [5, 6, 7, 3, 10, 75]
 
 print(x is y)  # returns True if both variables are the same object	x is y
