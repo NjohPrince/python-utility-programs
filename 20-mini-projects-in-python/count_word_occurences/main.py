@@ -33,6 +33,11 @@ for word in file_content_into_list:
     # counting unique words
     word_to_lower = word.lower()
     # print(word_to_lower) # print each word
+
+    # gets the value at the current key
+    # if found the get method will return the value 
+    # at that key and thus increment the occurence
+    # else the get method will return 0
     word_counter[word_to_lower] = word_counter.get(word_to_lower, 0) + 1
 
 # print the dictionary containint the different words as keys
