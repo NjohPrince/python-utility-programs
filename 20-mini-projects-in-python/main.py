@@ -9,5 +9,3 @@ __license__ = "MIT"
 __version__ = "1.0.0"
 __maintainer__ = "Njoh Noh Prince Junior"
 __email__ = "jufredprince@gmail.com"
-
-# program starts here - igonore what is above
