@@ -1,6 +1,9 @@
 import random
+
 from replit import clear
+
 from art import logo
+
 
 def deal_card():
     """
@@ -11,6 +14,7 @@ def deal_card():
     cards = [11, 2, 3, 4, 5, 6, 7, 8, 9, 10, 10, 10, 10]
     card = random.choice(cards)
     return card
+
 
 def calculate_score(cards):
     """
@@ -28,6 +32,7 @@ def calculate_score(cards):
         cards.remove(11)
         cards.append(1)
     return sum(cards)
+
 
 def compare(user_score, computer_score):
     """
@@ -55,6 +60,7 @@ def compare(user_score, computer_score):
     else:
         return "You lose 🤕"
 
+
 def play_game():
     """
     Main logic of the game
@@ -81,7 +87,7 @@ def play_game():
                 user_cards.append(deal_card())
                 user_score = calculate_score(user_cards)
             else:
-                is_game_over= True
+                is_game_over = True
 
     while computer_score != 0 and computer_score < 17:
         computer_cards.append(deal_card())
@@ -90,6 +96,7 @@ def play_game():
     print(f"    Your final hand: {user_cards}, final score: {user_score}")
     print(f"    Computer's final hand: {computer_cards}, final score: {computer_score}")
     print(compare(user_score, computer_score))
+
 
 while input("Do you want to play a game of Blackjack? Type 'y' or 'n': ").lower() == 'y':
     clear()

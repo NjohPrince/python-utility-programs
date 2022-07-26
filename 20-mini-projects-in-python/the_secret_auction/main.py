@@ -1,4 +1,5 @@
 from replit import clear
+
 from art import logo
 
 print(logo)
@@ -7,7 +8,15 @@ print('Welcome to the secret auction program.')
 bids = {}
 continue_bidding = True
 
+
 def highest_bidder(bidding_record):
+    """
+    Computes and displays the highest bidder
+
+    Args:
+        bidding_record (dictionary): contains name(key) and 
+                                              bid_amount(value) for everyone
+    """
     max_bid = 0
     winner = ""
     for bidder in bidding_record:
@@ -16,6 +25,7 @@ def highest_bidder(bidding_record):
             max_bid = bid_amount
             winner = bidder
     print(f'The winner is {winner} with a bid of {max_bid}')
+
 
 while continue_bidding:
     try:
@@ -29,6 +39,6 @@ while continue_bidding:
         elif should_continue == "yes":
             clear()
     except KeyboardInterrupt:
-        print("\KeyboardInterrupt not allowed")
+        print("\nKeyboardInterrupt not allowed")
     except Exception as ex:
         print(ex)
