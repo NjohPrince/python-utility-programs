@@ -9,10 +9,9 @@ MOVE_INCREMENT = 3
 class CarManager:
     def __init__(self):
         self.move_distance = MOVE_DISTANCE
-        # self.move_increment = MOVE_INCREMENT
         self.cars = []
 
-    def move_cars(self, player):
+    def move_cars(self):
         for car in self.cars:
             car.move(self.move_distance)
             if car.xcor() < -300:
