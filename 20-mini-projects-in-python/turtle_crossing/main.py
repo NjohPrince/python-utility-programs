@@ -22,7 +22,7 @@ while not game_over:
     time.sleep(0.1)
     screen.update()
     car_manager.create_car()
-    car_manager.move_cars(player)
+    car_manager.move_cars()
 
     # Detect collision with car
     for car in car_manager.cars:
