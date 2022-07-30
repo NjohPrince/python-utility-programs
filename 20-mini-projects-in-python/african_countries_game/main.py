@@ -19,10 +19,7 @@ while num_of_right_guesses < number_of_countries:
                                       prompt="What's another country's name?").title()
 
     if answer_country.lower() == "exit":
-        missing_countries = []
-        for country in countries:
-            if country not in guessed_countries:
-                missing_countries.append(country)
+        missing_countries = [country for country in countries if country not in guessed_countries]
         new_data = pandas.DataFrame(missing_countries)
         new_data.to_csv("countries_to_learn.csv")
         break
