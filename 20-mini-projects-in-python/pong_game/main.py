@@ -10,8 +10,8 @@ screen.setup(width=800, height=600)
 screen.bgcolor("black")
 screen.title("Ping Pong")
 
-r_paddle = Paddle(350, 0)
-l_paddle = Paddle(-350, 0)
+r_paddle = Paddle(x_cor=350, y_cor=0)
+l_paddle = Paddle(x_cor=-350, y_cor=0)
 ball = Ball()
 scoreboard = Scoreboard()
 
