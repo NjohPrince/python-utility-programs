@@ -13,6 +13,9 @@ while True:
     word = input("Enter a word to encode or 'quit' to exit: ").upper()
     if word == "QUIT":
         break
-    if word.isalpha():
+    try:
         output_list = [phonetic_dict[letter] for letter in word]
+    except KeyError:
+        print("Sorry, only letters in the alphabet please.")
+    else:
         print(output_list)
