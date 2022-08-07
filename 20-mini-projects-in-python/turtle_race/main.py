@@ -4,7 +4,6 @@ from turtle import Turtle, Screen
 screen = Screen()
 screen.setup(width=500, height=400)
 is_race_on = False
-user_bet = screen.textinput(title="Make you bet", prompt="Which turtle will win the race? Enter a color: ")
 colors = ["red", "orange", "yellow", "green", "blue", "purple"]
 turtles = []
 for i in range(6):
@@ -13,6 +12,8 @@ for i in range(6):
     new_turtle.penup()
     new_turtle.goto(x=-230, y=(-130 + i * 50))
     turtles.append(new_turtle)
+
+user_bet = screen.textinput(title="Make you bet", prompt="Which turtle will win the race? Enter a color: ")
 
 if user_bet:
     is_race_on = True
