@@ -13,7 +13,7 @@ for i in range(6):
     new_turtle.goto(x=-230, y=(-130 + i * 50))
     turtles.append(new_turtle)
 
-user_bet = screen.textinput(title="Make you bet", prompt="Which turtle will win the race? Enter a color: ")
+user_bet = screen.textinput(title="Make you bet", prompt="Which turtle will win the race? Enter a color(red, orange, blue, green, yellow, purple): ")
 
 if user_bet:
     is_race_on = True
